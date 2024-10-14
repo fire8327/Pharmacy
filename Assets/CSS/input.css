@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply flex flex-col min-h-screen bg-white text-[#282828] font-Roboto
+}
+    
+:root{
+    /* максимальная ширина контента */
+    @apply [--widthContent:1360px]
+    /* Растояние от границы брузера по бокам */
+    [--widthContentMargin:10px] sm:[--widthContentMargin:16px] xl:[--widthContentMargin:30px]
+}    
+
+/* Настройка кастомных контейнеров */
+/* Применение системы гридов для расположения контента в ячейку main или full или в любую другую ячейку между именованными линиями grid*/
+
+.grid-container{        
+    grid-template-columns: [full-start] minmax(var(--widthContentMargin), 1fr) [main-start] minmax(0, var(--widthContent)) [main-end] minmax(var(--widthContentMargin), 1fr) [full-end];
+    @apply grid
+}
+
+.grid-container>*{        
+    @apply col-[main]
+}    
+
+.wrapper{ 
+    @apply mr-auto max-w-[var(--widthContent)]
+}
+
+.container{        
+    @apply max-w-[var(--widthContent)]
+} 
+
+.font-Roboto {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.font-Nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
