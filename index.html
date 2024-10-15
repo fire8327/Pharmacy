@@ -15,7 +15,7 @@
                 <p class="font-Nunito tracking-widest">Фармия</p>
             </a>
             <div class="flex items-center gap-4">
-                <a href="" class="rounded-xl bg-[#00897B] text-white px-4 py-1.5">Каталог</a>
+                <a href="" class="rounded-xl bg-[#00897B] text-white px-4 py-1.5 border border-[#00897B] transition-all duration-500 hover:text-[#00897B] hover:bg-white">Каталог</a>
                 <form action="" class="relative">
                     <input type="text" class="rounded-full w-[500px] pl-4 pr-12 py-1.5 border border-[#00897B] focus:outline-none">
                     <button class="absolute top-1/2 -translate-y-1/2 right-2">
@@ -63,7 +63,7 @@
     </header>
 
     <main class="grid-container my-10 gap-y-12">
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-6">
             <p class="text-3xl font-Nunito tracking-widest">Новинки</p>
             <div class="swiper w-full relative newProducts">
                 <div class="swiper-wrapper">
@@ -73,7 +73,7 @@
                             <span class="line-clamp-2 transition-all duration-500 group-hover:text-[#00897B]">fsdjkfdsjk jjdfjsbgjdsgjhfjhjksdhf jksdjkfhsdjkfhsjdkfhsdjkfhsjkfhsdk</span>
                         </a>
                         <p class="font-semibold text-2xl">1 651 ₽</p>
-                        <a href="" class="w-full px-4 py-1.5 text-center bg-[#00897B] text-white rounded-full">В корзину</a>
+                        <a href="" class="w-full px-4 py-1.5 text-center bg-[#00897B] text-white rounded-full border border-[#00897B] transition-all duration-500 hover:text-[#00897B] hover:bg-white">В корзину</a>
                     </div>
                 </div>
                 <button class="newProductsPrev absolute top-1/2 -translate-y-1/2 z-[3] left-2 w-10 h-10 rounded-full bg-gray-200 border flex items-center justify-center">
@@ -84,8 +84,100 @@
                 </button>
             </div>
         </div>
+        <div class="flex flex-col gap-6">
+            <p class="text-3xl font-Nunito tracking-widest">Показатели</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Пункты выдачи -->
+                <div class="flex flex-col gap-2 items-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <circle class="text-gray-300" stroke-width="3" stroke="currentColor" fill="transparent" r="16" cx="18"
+                                cy="18" />
+                            <circle class="text-[#00897B]" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="28"
+                                stroke-linecap="round" stroke="currentColor" fill="transparent" r="16" cx="18" cy="18" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center font-semibold">
+                            72/100
+                        </div>
+                    </div>
+                    <p class="text-center font-medium text-gray-600 font-Nunito">Пункты выдачи</p>
+                </div>
+                
+                <!-- Скорость обработки заказов -->
+                <div class="flex flex-col gap-2 items-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <circle class="text-gray-300" stroke-width="3" stroke="currentColor" fill="transparent" r="16" cx="18"
+                                cy="18" />
+                            <circle class="text-[#00897B]" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="10"
+                                stroke-linecap="round" stroke="currentColor" fill="transparent" r="16" cx="18" cy="18" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center font-semibold">
+                            90%
+                        </div>
+                    </div>
+                    <p class="text-center font-medium text-gray-600 font-Nunito">Обработка заказов</p>
+                </div>
+                
+                <!-- Наличие популярных препаратов -->
+                <div class="flex flex-col gap-2 items-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <circle class="text-gray-300" stroke-width="3" stroke="currentColor" fill="transparent" r="16" cx="18"
+                                cy="18" />
+                            <circle class="text-[#00897B]" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="15"
+                                stroke-linecap="round" stroke="currentColor" fill="transparent" r="16" cx="18" cy="18" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center font-semibold">
+                            85%
+                        </div>
+                    </div>
+                    <p class="text-center font-medium text-gray-600 font-Nunito">Популярные препараты</p>
+                </div>
+                
+                <!-- Рейтинг аптеки -->
+                <div class="flex flex-col gap-2 items-center text-center">
+                    <div class="relative w-40 h-40">
+                        <svg class="transform -rotate-90" viewBox="0 0 36 36">
+                            <circle class="text-gray-300" stroke-width="3" stroke="currentColor" fill="transparent" r="16" cx="18"
+                                cy="18" />
+                            <circle class="text-[#00897B]" stroke-width="3" stroke-dasharray="100" stroke-dashoffset="6"
+                                stroke-linecap="round" stroke="currentColor" fill="transparent" r="16" cx="18" cy="18" />
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center font-semibold">
+                            94%
+                        </div>
+                    </div>
+                    <p class="text-center font-medium text-gray-600 font-Nunito">Рейтинг аптеки</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <p class="text-3xl font-Nunito tracking-widest">Акции</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="w-full rounded-xl border border-[#00897B]/10 shadow-[0px_0px_13px_-7px_black] overflow-hidden">
+                    <img src="Assets/Images/stocks/1.png" alt="" class="w-full aspect-video object-cover">
+                </div>
+                <div class="w-full rounded-xl border border-[#00897B]/10 shadow-[0px_0px_13px_-7px_black] overflow-hidden">
+                    <img src="Assets/Images/stocks/2.png" alt="" class="w-full aspect-video object-cover">
+                </div>
+                <div class="w-full rounded-xl border border-[#00897B]/10 shadow-[0px_0px_13px_-7px_black] overflow-hidden">
+                    <img src="Assets/Images/stocks/3.png" alt="" class="w-full aspect-video object-cover">
+                </div>
+                <div class="w-full rounded-xl border border-[#00897B]/10 shadow-[0px_0px_13px_-7px_black] overflow-hidden">
+                    <img src="Assets/Images/stocks/4.png" alt="" class="w-full aspect-video object-cover">
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6">
+            <p class="text-3xl font-Nunito tracking-widest">Фармия</p>
+            <p class="text-gray-600 tracking-wider">Фармия – современная онлайн-аптека с широким выбором лекарств, витаминов и товаров для красоты и здоровья. Мы заботимся о вашем самочувствии, предлагая доступные цены, удобные способы заказа и быструю доставку до двери.</p>
+            <img src="Assets/Images/about/main.jpg" alt="" class="rounded-xl w- lg:w-1/2 mx-auto aspect-video object-cover">
+            <a href="" class="self-end w-fit rounded-full px-4 py-1.5 bg-[#00897B] text-white border border-[#00897B] transition-all duration-500 hover:text-[#00897B] hover:bg-white">Подробнее</a>
+        </div>
     </main>
 
+    <footer class="w-full text-center bg-[#00897B]/10 py-2 font-Nunito">Copyright 2024 - Фармия</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
