@@ -905,6 +905,10 @@ video {
   height: 100%;
 }
 
+.h-\[400px\]{
+  height: 400px;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -3009,6 +3013,10 @@ body{
 .hover\:text-\[\#00897B\]:hover{
   --tw-text-opacity: 1;
   color: rgb(0 137 123 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#00897B\]\/70:hover{
+  color: rgb(0 137 123 / 0.7);
 }
 
 .before\:hover\:text-center:hover::before{
