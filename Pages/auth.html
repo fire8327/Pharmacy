@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../Assets/CSS/main.css">
+</head>
+<body>
+    <main class="grid-container my-10 gap-y-12 grow">
+        <form class="flex flex-col gap-4 items-center justify-center grow">
+            <p class="text-3xl font-Nunito tracking-widest text-[#00897B]/70">Вход</p>
+
+            <div class="flex items-center lg:items-start gap-4 max-lg:flex-col md:w-2/3 lg:w-1/2">
+                <input type="text" name="login" class="px-4 py-1.5 border border-[#00897B]/70 rounded-xl focus:outline-none w-full lg:w-1/2" placeholder="Логин" required />
+                <input type="password" name="password" class="px-4 py-1.5 border border-[#00897B]/70 rounded-xl focus:outline-none w-full lg:w-1/2" placeholder="••••••" required />
+            </div>
+          
+            <button type="submit" class="px-4 py-1.5 bg-[#00897B] text-white rounded-full w-[160px] text-center">
+                Вход
+            </button>
+          
+            <div class="flex items-center justify-center gap-4 w-full md:w-2/3 lg:w-1/2 my-10">
+                <div class="w-1/3 h-px bg-[#00897B]/70"></div>  
+                <p class="font-Nunito tracking-widest text-[#00897B]/70">или</p>
+                <div class="w-1/3 h-px bg-[#00897B]/70"></div>  
+            </div>
+          
+            <a href="reg.html" class="mx-auto px-4 py-1.5 border border-[#00897B] text-[#00897B] rounded-full w-[160px] text-center">
+                Регистрация
+            </a>
+        </form>          
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+</body>
+</html>
