@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../Assets/CSS/main.css">
+</head>
+<body>
+    <main class="grid-container my-10 gap-y-12 grow">
+        <div class="flex items-center gap-2 font-Nunito tracking-widest text-lg wrapper mx-auto w-full">
+            <a href="../index.html" class="relative after:absolute after:w-0 after:h-px after:bg-[#282828] after:bottom-0 after:left-0 after:transition-all after:duration-500 hover:after:w-full">
+            Главная
+            </a>
+            <p>/</p>
+            <p>Корзина</p>
+        </div>
+          
+        <div class="flex flex-col gap-6 w-full">
+            <p class="text-3xl font-Nunito tracking-widest text-[#00897B]/70">Список товаров</p>
+            
+            <!-- Карточки товаров -->
+            <div class="flex flex-col gap-4">
+                <div class="flex lg:items-center gap-6 max-lg:flex-col w-full">
+                    <img src="https://cdn.eapteka.ru/upload/offer_photo/514/742/resized/230_230_1_dd56c8616ecbfaacc6e91462f19227e2.png?t=1666657953&_cvc=1728460462" alt="" class="p-2 rounded-xl border transition-all duration-500 group-hover:scale-105">
+                    <div class="flex flex-col gap-4 lg:w-1/3">
+                        <p class="text-2xl font-Comfortaa">Название продукта</p>
+                        <p class="text-xl font-semibold">2,500 ₽</p>      
+                        <button type="button" class="px-4 py-1.5 border border-[#00897B] text-[#00897B] rounded-full w-fit">
+                            Удалить товар
+                        </button>
+                    </div>
+                </div>                  
+            </div>
+            
+            <p>
+                <span class="font-Nunito tracking-widest text-[#00897B]/70 font-semibold">Итоговая цена:</span> 10,000 ₽
+            </p>
+        </div>
+          
+        <div class="flex flex-col gap-6">
+            <p class="text-3xl font-Nunito tracking-widest text-[#00897B]/70">Оформление заказа</p>        
+            <form class="flex flex-col gap-4 w-full items-center md:w-2/3 lg:w-1/2 md:mx-auto">
+                <div class="flex items-start gap-2 w-full">
+                    <input type="text" name="card-number" class="px-4 py-1.5 border border-[#00897B]/70 rounded-xl focus:outline-none w-full md:w-2/4" placeholder="Номер карты" required />
+                    <input type="text" name="expiry-date" class="px-4 py-1.5 border border-[#00897B]/70 rounded-xl focus:outline-none w-full md:w-1/4" placeholder="YY/YY" required />
+                    <input type="text" name="cvc" class="px-4 py-1.5 border border-[#00897B]/70 rounded-xl focus:outline-none w-full md:w-1/4" placeholder="CVC" required />
+                </div>
+            
+                <textarea name="address" class="px-4 py-1.5 border border-[#00897B]/70 rounded-xl focus:outline-none w-full" placeholder="Адрес доставки" required></textarea>
+            
+                <button type="submit" class="px-4 py-1.5 bg-[#00897B] text-white rounded-full font-Nunito w-fit">
+                    Оформить заказ
+                </button>
+            </form>
+        </div>                
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../Assets/JS/main.js"></script>
+</body>
+</html>
