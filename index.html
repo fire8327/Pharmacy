@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="Assets/CSS/main.css">
 </head>
 <body>
@@ -61,10 +62,32 @@
         </div>
     </header>
 
-    <main class="grid-container">
-        
+    <main class="grid-container my-10 gap-y-12">
+        <div class="flex flex-col gap-3">
+            <p class="text-3xl font-Nunito tracking-widest">Новинки</p>
+            <div class="swiper w-full relative newProducts">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex flex-col gap-4">
+                        <a href="" class="flex flex-col gap-2 group">
+                            <img src="https://cdn.eapteka.ru/upload/offer_photo/514/742/resized/230_230_1_dd56c8616ecbfaacc6e91462f19227e2.png?t=1666657953&_cvc=1728460462" alt="" class="p-2 rounded-xl border transition-all duration-500 group-hover:scale-105">
+                            <span class="line-clamp-2 transition-all duration-500 group-hover:text-[#00897B]">fsdjkfdsjk jjdfjsbgjdsgjhfjhjksdhf jksdjkfhsdjkfhsjdkfhsdjkfhsjkfhsdk</span>
+                        </a>
+                        <p class="font-semibold text-2xl">1 651 ₽</p>
+                        <a href="" class="w-full px-4 py-1.5 text-center bg-[#00897B] text-white rounded-full">В корзину</a>
+                    </div>
+                </div>
+                <button class="newProductsPrev absolute top-1/2 -translate-y-1/2 z-[3] left-2 w-10 h-10 rounded-full bg-gray-200 border flex items-center justify-center">
+                    <img src="Assets/Images/slider/next.svg" alt="" class="scale-[-1]">
+                </button>
+                <button class="newProductsNext absolute top-1/2 -translate-y-1/2 z-[3] right-2 w-10 h-10 rounded-full bg-gray-200 border flex items-center justify-center">
+                   <img src="Assets/Images/slider/next.svg" alt="">
+                </button>
+            </div>
+        </div>
     </main>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="Assets/JS/main.js"></script>
 </body>
