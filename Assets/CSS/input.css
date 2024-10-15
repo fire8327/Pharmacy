@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body{
-    @apply flex flex-col min-h-screen bg-white text-[#282828] font-Roboto
+    @apply flex flex-col min-h-screen bg-white text-[#282828] font-Roboto text-xl
 }
     
 :root{

@@ -665,6 +665,14 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.right-2{
+  right: 0.5rem;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -820,6 +828,18 @@ video {
   display: none;
 }
 
+.w-6{
+  width: 1.5rem;
+}
+
+.w-8{
+  width: 2rem;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
 .w-\[this-is\\\\\]{
   width: this-is\\;
 }
@@ -870,6 +890,11 @@ video {
 
 .border-separate{
   border-collapse: separate;
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform{
@@ -1350,6 +1375,22 @@ video {
   justify-items: stretch;
 }
 
+.gap-0\.5{
+  gap: 0.125rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1666,6 +1707,14 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1790,6 +1839,16 @@ video {
   border-style: none;
 }
 
+.border-\[\#00897B\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 137 123 / var(--tw-border-opacity));
+}
+
+.bg-\[\#00897B\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 137 123 / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -1880,6 +1939,14 @@ video {
   background-origin: content-box;
 }
 
+.fill-\[\#374151\]{
+  fill: #374151;
+}
+
+.stroke-\[\#374151\]{
+  stroke: #374151;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -1915,9 +1982,32 @@ video {
   padding-right: 0.375rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-1\.5{
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pr-12{
+  padding-right: 3rem;
 }
 
 .text-left{
@@ -1974,6 +2064,11 @@ video {
 
 .align-super{
   vertical-align: super;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -2048,6 +2143,15 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.text-\[\#00897B\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 137 123 / var(--tw-text-opacity));
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
@@ -2055,6 +2159,11 @@ video {
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -2366,6 +2475,20 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
+}
+
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2434,6 +2557,8 @@ body{
   flex-direction: column;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(40 40 40 / var(--tw-text-opacity));
   font-family: "Roboto", sans-serif;
@@ -2541,12 +2666,30 @@ body{
   text-align: center;
 }
 
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .focus\:hover\:text-center:hover:focus{
   text-align: center;
 }
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
+}
+
+.group:hover .group-hover\:fill-\[\#00897B\]{
+  fill: #00897B;
+}
+
+.group:hover .group-hover\:stroke-\[\#00897B\]{
+  stroke: #00897B;
+}
+
+.group:hover .group-hover\:text-\[\#00897B\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 137 123 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px){
